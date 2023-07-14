@@ -1,0 +1,609 @@
+{
+	"info": {
+		"_postman_id": "9d0f3b0f-f4ae-4ff2-943c-1ca10a5213c9",
+		"name": "FLYT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21102785"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"satendra@gmail.com\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"satendra\",\n    \"email\": \"satendra@gmail.com\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get MyProfile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Site",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"site_name\": \"New York\",\n  \"position\": {\n    \"latitude\": \"52.520008\",\n    \"longitude\": \"13.404954\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/site/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"site",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Site",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"site_name\": \"Berlin\",\n  \"position\": {\n    \"latitude\": \"52.520009\",\n    \"longitude\": \"13.404955\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/site/64b03fc934bc3a0355848e5a/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"site",
+						"64b03fc934bc3a0355848e5a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Site",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/site/64b03fc934bc3a0355848e5a/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"site",
+						"64b03fc934bc3a0355848e5a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"site_id\": \"64b041bb1aed77d48a87dc65\",\n    \"drone_id\": \"D3\",\n    \"drone_type\": \"Real Drone 3\",\n    \"make_name\": \"cloudsim\",\n    \"name\": \"Virtual Drone 3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/drone/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"drone",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Drone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"drone_id\": \"wVQv1qs6\",\n    \"drone_type\": \"Real Drone1\",\n    \"make_name\": \"cloudsim\",\n    \"name\": \"Virtual Drone1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/drone/64b0483f60aa85de3a4ccfa9/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"drone",
+						"64b0483f60aa85de3a4ccfa9",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Drone",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/drone/64b048f0de114e0190935e00/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"drone",
+						"64b048f0de114e0190935e00",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drones By Site",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/drone/site/64b041bb1aed77d48a87dc65/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"drone",
+						"site",
+						"64b041bb1aed77d48a87dc65",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shift Drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from_site_id\": \"64b041bb1aed77d48a87dc65\",\n    \"to_site_id\": \"64b04aabbd4c30e1354a25fb\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/drone/shift/64b0485360aa85de3a4ccfad/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"drone",
+						"shift",
+						"64b0485360aa85de3a4ccfad",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drone By Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/drone/category/64b05706cc02b452e389244d/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"drone",
+						"category",
+						"64b05706cc02b452e389244d",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Mission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"site_id\": \"64b041bb1aed77d48a87dc65\",\n    \"category_id\": \"64b05706cc02b452e389244d\",\n    \"drone_id\": \"64b0493e5d2a7f0d7993c854\",\n    \"alt\": 40,\n    \"speed\": 15,\n    \"name\": \"mission_4\",\n    \"waypoints\": [\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/mission/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"mission",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Mission",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"site_id\": \"64b041bb1aed77d48a87dc65\",\n    \"alt\": 80,\n    \"speed\": 55,\n    \"name\": \"mission_11\",\n    \"waypoints\": [\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/mission/64b04f885a6fc24932023d1f/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"mission",
+						"64b04f885a6fc24932023d1f",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Mission",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alt\": 40,\n    \"speed\": 15,\n    \"name\": \"mission_1\",\n    \"waypoints\": [\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/mission/64b04f885a6fc24932023d1f/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"mission",
+						"64b04f885a6fc24932023d1f",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mission By Site",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alt\": 40,\n    \"speed\": 15,\n    \"name\": \"mission_1\",\n    \"waypoints\": [\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/mission/site/64b041bb1aed77d48a87dc65/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"mission",
+						"site",
+						"64b041bb1aed77d48a87dc65",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mission By Category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alt\": 40,\n    \"speed\": 15,\n    \"name\": \"mission_1\",\n    \"waypoints\": [\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        },\n        {\n            \"alt\": 40,\n            \"lat\": 37.42987269786578,\n            \"lng\": -122.08320293735657\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/mission/category/64b05706cc02b452e389244d/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"mission",
+						"category",
+						"64b05706cc02b452e389244d",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Grid\",\n    \"color\": \"#407BE3\",\n    \"tag_name\": \"test01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/category/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"category",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"AAAAAAAAAAAA\",\n    \"color\": \"#407BE3\",\n    \"tag_name\": \"test01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/category/64b0540f3eae6b0e3bb1428a/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"category",
+						"64b0540f3eae6b0e3bb1428a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Grid\",\n    \"color\": \"#407BE3\",\n    \"tag_name\": \"test01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/category/64b0540f3eae6b0e3bb1428a/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"category",
+						"64b0540f3eae6b0e3bb1428a",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
