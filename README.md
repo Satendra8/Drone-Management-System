@@ -2,6 +2,7 @@
 
 FLYT API is a RESTful API that allows you to manage users, sites, drones, missions, and categories. This README provides information on how to use the API endpoints.
 
+### I have deployed this using render Base Url:- https://flytbase-h0j8.onrender.com/api/v1.
 
 ### Some API endpoints require authentication.
 **
@@ -45,7 +46,7 @@ Some API endpoints require authentication.
 2. PUT /category/{category_id}: Updates the specified category.
 3. DELETE /category/{category_id}: Deletes the specified category.
 
- I have attached a json file of Postman collection **FLYT.postman_collection.json** it includes urls and paylaod data, use this is to test APIs.
+ I have attached a JSON file of Postman collection **FLYT.postman_collection.json** it includes URLs and payload data, use this to test APIs.
 
 
 
