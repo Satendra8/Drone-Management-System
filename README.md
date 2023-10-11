@@ -1,6 +1,6 @@
-# FLYT API
+# Drone Management System
 
-FLYT API is a RESTful API that allows you to manage users, sites, drones, missions, and categories. This README provides information on how to use the API endpoints.
+Drone Management System is a collection RESTful API that allows you to manage users, sites, drones, missions, and categories. This README provides information on how to use the API endpoints.
 
 ### I have deployed this using render Base Url:- https://flytbase-h0j8.onrender.com/api/v1.
 
